@@ -1,0 +1,14 @@
+---
+- name: install GPG
+  rpm_key:
+    key: https://download.fman.io/rpm/public.gpg
+
+- name: add fman repo
+  yum_repository:
+    name: fman
+    description: fman repo
+    baseurl: https://download.fman.io/rpm/fman.repo
+
+- name: install fman
+  yum:
+    name: fman

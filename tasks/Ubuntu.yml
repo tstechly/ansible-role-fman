@@ -1,0 +1,19 @@
+---
+- name: install dirmngr
+  apt:
+    name: dirmngr
+    update_cache: true
+
+- name: Add an apt key by id from a keyserver
+  apt_key:
+    keyserver: keyserver.ubuntu.com
+    id: 45BCC825BC281C06D2A7F912B015FE599CFAF7EB
+
+- name: add repo
+  apt_repository:
+    repo: deb [arch=amd64] https://fman.io/updates/ubuntu/ stable main
+
+- name: install fman
+  apt:
+    name: fman
+    update_cache: true
