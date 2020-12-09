@@ -20,3 +20,7 @@ provisioner:
 verifier:
   name: testinfra
   enabled: true
+lint: |
+  set -e
+  yamllint .
+  ansible-lint .

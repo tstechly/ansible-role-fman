@@ -1,6 +1,6 @@
 ---
 - name: install dirmngr
-  apt: 
+  apt:
     name: dirmngr
     update_cache: true
 
@@ -10,7 +10,7 @@
     id: 45BCC825BC281C06D2A7F912B015FE599CFAF7EB
 
 - name: add repo
-  apt_repository: 
+  apt_repository:
     repo: deb [arch=amd64] https://fman.io/updates/ubuntu/ stable main
 
 - name: install fman
