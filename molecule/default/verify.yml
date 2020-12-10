@@ -8,6 +8,3 @@
   - name: Example assertion
     assert:
       that: true
-  - name: verify fman exists
-    assert:
-      that: 
