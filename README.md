@@ -1,5 +1,6 @@
 Role Name
 =========
+![CI](https://github.com/tstechly/ansible-role-fman/workflows/CI/badge.svg)
 
 A brief description of the role goes here.
 
