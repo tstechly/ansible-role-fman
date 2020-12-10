@@ -43,7 +43,7 @@ jobs:
     strategy:
       matrix:
         distro:
-          - centos7
+#          - centos7
           - ubuntu2004
 
     steps:
